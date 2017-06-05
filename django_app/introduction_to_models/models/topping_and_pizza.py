@@ -4,7 +4,7 @@ from django.db import models
 class Topping(models.Model):
     name = models.CharField(max_length=30)
     def __str__(self):
-        return self.attr_name
+        return self.name
 
     class Meta:
         ordering = ('name',)
