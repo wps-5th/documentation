@@ -12,10 +12,10 @@ class Place(models.Model):
 
 
 class Restaurant(models.Model):
-    owner = models.OneToOneField(
-        Person,
-        on_delete=models.CASCADE
-    )
+    # owner = models.OneToOneField(
+    #     Person,
+    #     on_delete=models.CASCADE
+    # )
     place = models.OneToOneField(
         Place,
         on_delete=models.CASCADE,
